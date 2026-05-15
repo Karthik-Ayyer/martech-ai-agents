@@ -19,6 +19,18 @@ Automatically scores B2B SaaS leads from 0-100 using a custom framework built on
 - Returns Hot/Warm/Cold recommendation and specific next action
 - Powered by Claude AI with domain-defined scoring rules
 
+### 2. Data Hygiene Agent
+Automatically analyzes B2B lead records and identifies data quality issues before they impact marketing operations.
+
+**Issues Detected:**
+- Duplicate records across the database
+- Invalid or missing email addresses
+- Test and disposable email accounts
+- Missing required fields (company, title)
+- Inconsistent data formats (country, name casing, company names)
+
+**Output:** Detailed issue report with severity rating and specific recommendations — merge, quarantine, enrich, normalize, or delete.
+
 ## Tech Stack
 - Python 3.13
 - Anthropic Claude API (claude-haiku)
