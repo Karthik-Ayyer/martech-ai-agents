@@ -32,6 +32,19 @@ Automatically scores B2B SaaS leads from 0-100 using a custom framework built on
 4. Install dependencies: `pip install anthropic python-dotenv`
 5. Open the notebook and run all cells
 
+## System Design
+
+See the `/system-design` folder for a complete GTM Data Governance 
+and Lifecycle Orchestration Framework covering:
+
+- Data quality and normalization strategy
+- Identity resolution and deduplication logic
+- Lead routing and lifecycle orchestration
+- API integration design with OAuth, pagination, and idempotency
+- Observability and reliability patterns
+
+Built from hands-on experience with Marketo, Salesforce, LeanData, 6sense, and ZoomInfo.
+
 ## About
 Built by **Karthik Ayyer** — Marketing Automation Manager with expertise in MarTech & Revenue Operations (Marketo, Salesforce, LeanData, 6sense, Looker).
 
