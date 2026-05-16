@@ -44,6 +44,19 @@ Automatically routes incoming B2B leads to the correct sales rep based on territ
 
 **Mirrors:** LeanData routing logic used in production MarTech stacks.
 
+### 4. Campaign Performance Analyzer
+Automatically analyzes B2B marketing campaign results, compares against industry benchmarks, flags anomalies, and generates CMO-ready recommendations.
+
+**Analysis Framework:**
+- Performance rating — Excellent / Good / Needs Improvement / Critical
+- Key metrics — open rate, click rate, cost per MQL, pipeline ROI
+- Benchmark comparison — actual vs target with variance percentage
+- Anomaly detection — unusual patterns flagged with severity levels
+- Recommendations — immediate, short-term, and strategic actions
+- Executive summary — 3-sentence CMO-ready report
+
+**Real-World Use:** Replaces hours of manual campaign reporting with instant AI-driven insights posted directly to Slack or email after every send.
+
 ## Tech Stack
 - Python 3.13
 - Anthropic Claude API (claude-haiku)
