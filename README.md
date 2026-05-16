@@ -31,6 +31,19 @@ Automatically analyzes B2B lead records and identifies data quality issues befor
 
 **Output:** Detailed issue report with severity rating and specific recommendations — merge, quarantine, enrich, normalize, or delete.
 
+### 3. Lead Routing Agent
+Automatically routes incoming B2B leads to the correct sales rep based on territory, company size, lead score, and existing account ownership rules.
+
+**Routing Logic:**
+- Territory-based assignment (APAC, USA/Canada, Europe, Rest of World)
+- Company size override — 1000+ employees always route to Enterprise team
+- Lead score override — 80+ score triggers HOT priority flag
+- Existing account ownership rule — always routes to current account owner
+
+**Output:** Rep assignment with queue, priority level, full routing reason, and SLA deadline.
+
+**Mirrors:** LeanData routing logic used in production MarTech stacks.
+
 ## Tech Stack
 - Python 3.13
 - Anthropic Claude API (claude-haiku)
