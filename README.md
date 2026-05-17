@@ -57,11 +57,34 @@ Automatically analyzes B2B marketing campaign results, compares against industry
 
 **Real-World Use:** Replaces hours of manual campaign reporting with instant AI-driven insights posted directly to Slack or email after every send.
 
+### 5. Salesforce OAuth2 Integration with AI Lead Scoring
+
+Live Salesforce integration that connects Python to a real Salesforce org, creates leads via API, scores them using the Lead Scoring Agent, and writes AI scores back to Salesforce as a custom field.
+
+**What it does:**
+- Authenticates to Salesforce using OAuth2 Client Credentials flow
+- Creates B2B leads in Salesforce via Python API
+- Fetches leads using SOQL queries
+- Scores each lead using the Lead Scoring Agent
+- Writes AI Lead Score back to Salesforce as a custom field (`AI_Lead_Score__c`)
+
+**Key concepts demonstrated:**
+- OAuth2 authentication (no username/password)
+- SOQL queries
+- Duplicate detection before lead creation
+- Read/write operations on Salesforce objects
+- Modular design — scoring criteria imported from `scoring_config.py`
+
+**Tech:** Python, simple-salesforce, Anthropic Claude API, Salesforce Developer Edition
+
 ## Tech Stack
 - Python 3.13
 - Anthropic Claude API (claude-haiku)
 - Jupyter Notebook
 - python-dotenv
+- simple-salesforce
+- Salesforce (OAuth2 Client Credentials Flow)
+
 
 ## Setup
 1. Clone this repository
@@ -86,4 +109,4 @@ Built from hands-on experience with Marketo, Salesforce, LeanData, 6sense, and Z
 ## About
 Built by **Karthik Ayyer** — Marketing Automation Manager with expertise in MarTech & Revenue Operations (Marketo, Salesforce, LeanData, 6sense, Looker).
 
-This project demonstrates how AI agents can automate and enhance core MarTech workflows without requiring access to live enterprise systems.
+This project demonstrates how AI agents can automate and enhance core MarTech workflows — including live Salesforce integrations.
